@@ -1,0 +1,75 @@
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(204, 48, 48);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(bg.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+main {
+  width: 100vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: gray;
+}
+.w {
+  height: 50vh;
+  background-color: white;
+  border: 4px solid black;
+  margin-left: 0.5px;
+}
+.w p {
+  text-align: center;
+}
+
+.b {
+  background-color: black;
+  height: 25vh;
+  width: 4%;
+  position: absolute;
+  z-index: 1;
+  bottom: 355px;
+  color: white;
+  text-align: center;
+}
+
+.black1 {
+  left: 12%;
+}
+
+.black2 {
+  left: 26.5%;
+}
+
+.black3 {
+  left: 55%;
+}
+.black4 {
+  left: 69.5%;
+}
+.black5 {
+  left: 84%;
+}
+
+.none {
+  display: none;
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+}
+
+@media (orientation: portrait) {
+  .none {
+    display: inherit;
+  }
+}
